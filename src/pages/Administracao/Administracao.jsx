@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import "./styles.scss"
 
 export default function Administracao(props) {
@@ -8,6 +8,9 @@ export default function Administracao(props) {
 
 
     useState(() => {
+        if (!localStorage.getItem('agendamentos')) {
+            localStorage.setItem('agendamentos', '[]')
+        }
         const consultasFiltradas = listaConsultas.filter((consulta) => consulta.status === 'Pendente')
         const consultasFiltradasRealizadas = listaConsultas.filter((consulta) => consulta.status === 'Realizado')
         setConsultasPendentes(consultasFiltradas)
