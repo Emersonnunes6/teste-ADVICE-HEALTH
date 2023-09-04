@@ -1,6 +1,25 @@
 .sidebar-container{
-    margin-right: 90vw;
-    height: 100vh;
-    background-color: black;
-    width: 20vw;
+    max-height: 100%;
+    padding-top: 2vh;
+    background-color: #DCDCDC;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 3vw;
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    border-radius: 10%;
+    margin-bottom: 1vh;
+    width: 35px;
+    height: 35px;
 }

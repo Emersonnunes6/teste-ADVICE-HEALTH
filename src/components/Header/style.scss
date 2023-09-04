@@ -1,0 +1,124 @@
+.header-container {
+    width: 100%;
+    background-color: darkgray;
+}
+
+.header-container-minimized {
+    width: 100%;
+    background-color: lightgray;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 17vh;
+    width: 100%;
+    
+    transition: width 2s, height 1s;
+}
+
+.header-content-minimized {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+
+    
+    transition: width 2s, height 1s;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info-minimized {
+    width: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 1vh;
+    cursor: pointer;
+}
+
+.info-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+
+    p {
+
+        font-family: 'Ubuntu', sans-serif;
+        margin: 1px 1px 1px 1px;
+        color: black;
+    }
+
+    h4 {
+
+        font-family: 'Ubuntu', sans-serif;
+        margin: 5px 5px 5px 5px;
+        margin-left: 5px;
+        color: black;
+    }
+}
+
+.info-row-minimized {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+        font-size: large;
+        margin-right: 1vh;
+        color: black;
+    }
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 3vh;
+}
+
+.info-division {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        height: 13vh;
+    }
+}
+
+.image-minimized {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+        height: 4vh;
+        border-radius: 50%;
+    }
+}
